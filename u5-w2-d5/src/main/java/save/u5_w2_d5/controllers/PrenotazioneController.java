@@ -17,27 +17,32 @@ public class PrenotazioneController {
     @Autowired
     private PrenotazioneService prenotazioneService;
 
+    // POST
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Prenotazione save(@RequestBody @Valid PrenotazionePayload body) {
         return prenotazioneService.save(body);
     }
 
+    // GET
     @GetMapping
     public List<Prenotazione> findAll() {
         return prenotazioneService.findAll();
     }
 
+    // GET ID
     @GetMapping("/{id}")
     public Prenotazione findById(@PathVariable long id) {
         return prenotazioneService.findById(id);
     }
 
+    // PUT
     @PutMapping("/{id}")
     public Prenotazione update(@PathVariable long id, @RequestBody @Valid PrenotazionePayload body) {
         return prenotazioneService.update(id, body);
     }
 
+    // DELETE
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable long id) {

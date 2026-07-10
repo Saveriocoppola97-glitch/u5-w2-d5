@@ -36,7 +36,6 @@ public class PrenotazioneService {
 
         Dipendente d = dipendenteService.findById(body.dipendenteId());
         Viaggio v = viaggioService.findById(body.viaggioId());
-
         Prenotazione p = new Prenotazione();
         p.setDipendente(d);
         p.setViaggio(v);
@@ -50,7 +49,6 @@ public class PrenotazioneService {
         Prenotazione p = findById(id);
         Dipendente d = dipendenteService.findById(body.dipendenteId());
         Viaggio v = viaggioService.findById(body.viaggioId());
-
         p.setDipendente(d);
         p.setViaggio(v);
         p.setDataPrenotazione(body.dataPrenotazione());

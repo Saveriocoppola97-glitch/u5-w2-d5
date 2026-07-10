@@ -17,27 +17,32 @@ public class ViaggioController {
     @Autowired
     private ViaggioService viaggioService;
 
+    // POST
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Viaggio save(@RequestBody @Valid ViaggioPayload body) {
         return viaggioService.save(body);
     }
 
+    // GET
     @GetMapping
     public List<Viaggio> findAll() {
         return viaggioService.findAll();
     }
 
+    // GET ID
     @GetMapping("/{id}")
     public Viaggio findById(@PathVariable long id) {
         return viaggioService.findById(id);
     }
 
+    // PUT
     @PutMapping("/{id}")
     public Viaggio update(@PathVariable long id, @RequestBody @Valid ViaggioPayload body) {
         return viaggioService.update(id, body);
     }
 
+    // DELETE
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable long id) {
