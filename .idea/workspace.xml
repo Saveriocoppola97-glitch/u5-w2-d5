@@ -1,4 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PropertiesComponent">{}</component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a203bb82-ba8e-431c-91ab-9728353d7f34" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/controllers/DipendenteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/controllers/PrenotazioneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/controllers/ViaggioController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/exceptions/ExceptionsHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/payloads/DipendentePayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/payloads/PrenotazionePayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/payloads/ViaggioPayload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/services/DipendenteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/services/PrenotazioneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/services/ViaggioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/u5-w2-d5/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/repositories/PrenotazioneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/repositories/PrenotazioneRepository.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="3GIteashMOnPmkTr4mWrCYDsfjU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "Spring Boot.U5W2D5Application.executor": "Run",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-37e91769500f-intellij.indexing.shared.core-IU-261.24374.151" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-IU-261.24374.151" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a203bb82-ba8e-431c-91ab-9728353d7f34" name="Changes" comment="" />
+      <created>1783671007323</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1783671007323</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
 </project>

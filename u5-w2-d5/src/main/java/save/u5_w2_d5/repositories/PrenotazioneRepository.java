@@ -1,4 +1,9 @@
 package save.u5_w2_d5.repositories;
 
-public interface PrenotazioneRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import save.u5_w2_d5.entities.Prenotazione;
+
+@Repository
+public interface PrenotazioneRepository extends JpaRepository<Prenotazione, Long> {
 }
