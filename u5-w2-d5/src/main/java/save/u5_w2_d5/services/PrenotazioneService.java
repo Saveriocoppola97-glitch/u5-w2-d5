@@ -28,9 +28,15 @@ public class PrenotazioneService {
 
     // SAVE
     public Prenotazione save(PrenotazionePayload body) {
+        // GIA PERNOTATO
+        boolean giaPrenotato = pr.existsByDipendenteIdAndDataPrenotazione(body.dipendenteId(), body.dataPrenotazione());
+        if (giaPrenotato) {
+            throw new RuntimeException("C'è già una prenotazione per la data " + body.dataPrenotazione());
+        }
+
         Dipendente d = dipendenteService.findById(body.dipendenteId());
         Viaggio v = viaggioService.findById(body.viaggioId());
-        // Se non hai il costruttore a 4 parametri, usa i setter come sotto
+
         Prenotazione p = new Prenotazione();
         p.setDipendente(d);
         p.setViaggio(v);
