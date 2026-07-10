@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a203bb82-ba8e-431c-91ab-9728353d7f34" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/u5-w2-d5/env.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/config/CloudinaryConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/u5-w2-d5/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/repositories/PrenotazioneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/repositories/PrenotazioneRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/services/PrenotazioneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/services/PrenotazioneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/u5-w2-d5/env.properties" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/env.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/config/CloudinaryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/config/CloudinaryConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/controllers/DipendenteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/controllers/DipendenteController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/entities/Dipendente.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/entities/Dipendente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/services/DipendenteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/services/DipendenteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

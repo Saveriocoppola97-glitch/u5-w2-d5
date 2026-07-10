@@ -4,10 +4,12 @@ import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import save.u5_w2_d5.entities.Dipendente;
 import save.u5_w2_d5.payloads.DipendentePayload;
 import save.u5_w2_d5.services.DipendenteService;
 
+import java.io.IOException;
 import java.util.List;
 
 @RestController
@@ -47,5 +49,11 @@ public class DipendenteController {
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable long id) {
         dipendenteService.delete(id);
+    }
+
+    // AVATAR
+    @PatchMapping("/{id}/avatar")
+    public Dipendente uploadAvatar(@PathVariable long id, @RequestParam("avatar") MultipartFile file) throws IOException {
+        return dipendenteService.uploadAvatar(id, file);
     }
 }

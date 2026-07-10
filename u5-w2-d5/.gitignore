@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### ESCLUDO KEY CLOUDINARY ###
+src/main/resources/env.properties
