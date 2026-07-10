@@ -10,29 +10,51 @@ import java.util.List;
 @Service
 public class PrenotazioneService {
     @Autowired
-    private PrenotazioneRepository prenotazioneRepository;
+    private PrenotazioneRepository pr;
     @Autowired
-    private DipendenteRepository dipendenteRepository;
+    private DipendenteService dipendenteService;
     @Autowired
-    private ViaggioRepository viaggioRepository;
+    private ViaggioService viaggioService;
 
+    // GET ALL
     public List<Prenotazione> findAll() {
-        return prenotazioneRepository.findAll();
+        return pr.findAll();
     }
 
+    // FIND BY ID
+    public Prenotazione findById(long id) {
+        return pr.findById(id).orElseThrow(() -> new RuntimeException("Prenotazione con id " + id + " non trovata"));
+    }
+
+    // SAVE
     public Prenotazione save(PrenotazionePayload body) {
-        Dipendente d = dipendenteRepository.findById(body.dipendenteId())
-                .orElseThrow(() -> new RuntimeException("Dipendente non trovato"));
-
-        Viaggio v = viaggioRepository.findById(body.viaggioId())
-                .orElseThrow(() -> new RuntimeException("Viaggio non trovato"));
-
+        Dipendente d = dipendenteService.findById(body.dipendenteId());
+        Viaggio v = viaggioService.findById(body.viaggioId());
+        // Se non hai il costruttore a 4 parametri, usa i setter come sotto
         Prenotazione p = new Prenotazione();
         p.setDipendente(d);
         p.setViaggio(v);
         p.setDataPrenotazione(body.dataPrenotazione());
         p.setNote(body.note());
+        return pr.save(p);
+    }
 
-        return prenotazioneRepository.save(p);
+    // UPDATE
+    public Prenotazione update(long id, PrenotazionePayload body) {
+        Prenotazione p = findById(id);
+        Dipendente d = dipendenteService.findById(body.dipendenteId());
+        Viaggio v = viaggioService.findById(body.viaggioId());
+
+        p.setDipendente(d);
+        p.setViaggio(v);
+        p.setDataPrenotazione(body.dataPrenotazione());
+        p.setNote(body.note());
+        return pr.save(p);
+    }
+
+    // DELETE
+    public void delete(long id) {
+        Prenotazione found = findById(id);
+        pr.delete(found);
     }
 }

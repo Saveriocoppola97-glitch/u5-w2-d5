@@ -13,32 +13,39 @@ import java.util.List;
 @RestController
 @RequestMapping("/dipendenti")
 public class DipendenteController {
+
     @Autowired
     private DipendenteService dipendenteService;
 
+    // POST
     @PostMapping
+    @ResponseStatus(HttpStatus.CREATED)
     public Dipendente save(@RequestBody @Valid DipendentePayload body) {
         return dipendenteService.save(body);
     }
 
+    // GET
     @GetMapping
     public List<Dipendente> findAll() {
         return dipendenteService.findAll();
     }
 
+    // GET ID
     @GetMapping("/{id}")
     public Dipendente findById(@PathVariable long id) {
         return dipendenteService.findById(id);
     }
 
+    // PUT
     @PutMapping("/{id}")
     public Dipendente update(@PathVariable long id, @RequestBody @Valid DipendentePayload body) {
         return dipendenteService.update(id, body);
     }
 
+    // DELETE
     @DeleteMapping("/{id}")
-    @ResponseStatus(HttpStatus.NO_CONTENT) // 204: Operazione avvenuta con successo senza corpo di risposta
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void delete(@PathVariable long id) {
-        dipendenteService.findByIdAndDelete(id);
+        dipendenteService.delete(id);
     }
 }

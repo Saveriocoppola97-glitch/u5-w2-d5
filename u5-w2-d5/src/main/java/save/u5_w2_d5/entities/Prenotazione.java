@@ -1,10 +1,12 @@
 package save.u5_w2_d5.entities;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 import java.time.LocalDate;
 
+@AllArgsConstructor
 @Getter
 @Entity
 @Table(name = "prenotazioni")
@@ -23,6 +25,8 @@ public class Prenotazione {
 
     public Prenotazione() {
     }
+
+
 
     public void setDataPrenotazione(LocalDate data) {
         this.dataPrenotazione = data;

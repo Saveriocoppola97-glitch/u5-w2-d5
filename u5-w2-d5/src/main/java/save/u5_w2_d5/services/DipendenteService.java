@@ -13,6 +13,17 @@ public class DipendenteService {
     @Autowired
     private DipendenteRepository dr;
 
+    // GET
+    public List<Dipendente> findAll() {
+        return dr.findAll();
+    }
+
+    // FIND BY ID
+    public Dipendente findById(long id) {
+        return dr.findById(id).orElseThrow(() -> new RuntimeException("Dipendente non trovato"));
+    }
+
+    // SAVE
     public Dipendente save(DipendentePayload body) {
         Dipendente d = new Dipendente();
         d.setUsername(body.username());
@@ -20,14 +31,6 @@ public class DipendenteService {
         d.setCognome(body.cognome());
         d.setEmail(body.email());
         return dr.save(d);
-    }
-
-    public List<Dipendente> findAll() {
-        return dr.findAll();
-    }
-
-    public Dipendente findById(long id) {
-        return dr.findById(id).orElseThrow(() -> new RuntimeException("Dipendente con id " + id + " non trovato"));
     }
 
     // UPDATE
@@ -41,7 +44,7 @@ public class DipendenteService {
     }
 
     // DELETE
-    public void findByIdAndDelete(long id) {
+    public void delete(long id) {
         Dipendente found = findById(id);
         dr.delete(found);
     }
