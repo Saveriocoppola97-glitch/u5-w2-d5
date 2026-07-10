@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a203bb82-ba8e-431c-91ab-9728353d7f34" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/repositories/PrenotazioneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/repositories/PrenotazioneRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/services/PrenotazioneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/services/PrenotazioneService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,14 +47,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "Spring Boot.U5W2D5Application.executor": "Debug",
+    "Spring Boot.U5W2D5Application.executor": "Run",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "G:/Saverio Personale/Repository Github app/u5-w2-d5/u5-w2-d5/src/main/java/save/u5_w2_d5/assets"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Saverio Personale\Repository Github app\u5-w2-d5\u5-w2-d5\src\main\java\save\u5_w2_d5\assets" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="G:\Saverio Personale\Repository Github app\u5-w2-d5\u5-w2-d5\src\main\resources" />
     </key>

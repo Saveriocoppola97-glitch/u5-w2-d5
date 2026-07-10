@@ -11,8 +11,10 @@ import java.util.List;
 public class PrenotazioneService {
     @Autowired
     private PrenotazioneRepository pr;
+
     @Autowired
     private DipendenteService dipendenteService;
+
     @Autowired
     private ViaggioService viaggioService;
 

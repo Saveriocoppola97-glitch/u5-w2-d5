@@ -7,5 +7,6 @@ import java.time.LocalDate;@Repository
 
 
 public interface PrenotazioneRepository extends JpaRepository<Prenotazione, Long> {
+    // Metodo controllo dipendente
     boolean existsByDipendenteIdAndDataPrenotazione(long dipendenteId, LocalDate dataPrenotazione);
 }
