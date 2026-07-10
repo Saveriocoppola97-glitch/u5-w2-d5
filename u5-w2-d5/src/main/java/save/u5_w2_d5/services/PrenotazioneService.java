@@ -31,7 +31,7 @@ public class PrenotazioneService {
         // GIA PERNOTATO
         boolean giaPrenotato = pr.existsByDipendenteIdAndDataPrenotazione(body.dipendenteId(), body.dataPrenotazione());
         if (giaPrenotato) {
-            throw new RuntimeException("C'è già una prenotazione per la data " + body.dataPrenotazione());
+            throw new RuntimeException("C'è già una prenotazione per il " + body.dataPrenotazione());
         }
 
         Dipendente d = dipendenteService.findById(body.dipendenteId());
