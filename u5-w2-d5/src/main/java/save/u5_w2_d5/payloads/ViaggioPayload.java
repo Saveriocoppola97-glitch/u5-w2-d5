@@ -6,12 +6,12 @@ import jakarta.validation.constraints.NotNull;
 import java.time.LocalDate;
 
 public record ViaggioPayload(
-        @NotBlank(message = "La destinazione è obbligatoria")
+        @NotBlank(message = "Destinazione obbligatoria")
         String destinazione,
 
-        @NotNull(message = "La data è obbligatoria")
+        @NotNull(message = "Data obbligatoria")
         LocalDate data,
 
-        @NotBlank(message = "Lo stato del viaggio è obbligatorio")
+        @NotBlank(message = "Inserire uno stato di viaggio obbligatorio")
         String statoViaggio
 ) {}

@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a203bb82-ba8e-431c-91ab-9728353d7f34" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/controllers/PrenotazioneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/controllers/PrenotazioneController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/controllers/ViaggioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/controllers/ViaggioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/entities/Dipendente.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/entities/Dipendente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/entities/Prenotazione.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/entities/Prenotazione.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/entities/Viaggio.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/entities/Viaggio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/services/PrenotazioneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/services/PrenotazioneService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/exceptions/ExceptionsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/exceptions/ExceptionsHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/payloads/ViaggioPayload.java" beforeDir="false" afterPath="$PROJECT_DIR$/u5-w2-d5/src/main/java/save/u5_w2_d5/payloads/ViaggioPayload.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

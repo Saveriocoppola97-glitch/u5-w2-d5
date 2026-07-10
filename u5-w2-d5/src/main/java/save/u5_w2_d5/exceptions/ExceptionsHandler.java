@@ -11,6 +11,7 @@ import java.util.Map;
 @RestControllerAdvice
 public class ExceptionsHandler {
 
+    // CONTROLLO DATI INSERITI
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)
     public Map<String, String> handleValidationErrors(MethodArgumentNotValidException e) {
@@ -21,6 +22,7 @@ public class ExceptionsHandler {
         return errore;
     }
 
+    // ERRORE 404
     @ExceptionHandler(RuntimeException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public Map<String, String> handleNotFound(RuntimeException e) {
